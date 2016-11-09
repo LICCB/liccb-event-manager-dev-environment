@@ -7,6 +7,7 @@ Project work done for Long Island City Community Boathouse
 
 ## Setup
 1. Replace the folders map in `dev/Homestead.yaml` to point to the absolute path to `dev/liccb-event-manager` on your local machine
+2. Open command prompt and type `vagrant add box laravel/homestead`
 2. (Optional) Add `192.168.10.10 liccb-event-manager.dev` to your local `hosts` file 
 
 ## Running
