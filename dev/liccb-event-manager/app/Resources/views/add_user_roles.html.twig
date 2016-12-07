@@ -10,9 +10,11 @@
 		{% for users in user_entries %}
 		{# Contain each user entry in dropdown configuration in unordered list#}
 		<li>{{ user.name }}</li>
-    <form action="whatever_url" method="post">
-      <input type="checkbox" name="add_role" value="role">Add role?<br>
-    </form>
+		<li>
+    		<form action="whatever_url" method="post">
+      			<input type="checkbox" name="add_role" value="role">Add role?<br>
+    		</form>
+		</li>
 		{% endfor %}
 	</ul>
 {% endblock %}
