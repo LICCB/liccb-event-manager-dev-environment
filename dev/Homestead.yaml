@@ -12,7 +12,7 @@ keys:
     - ~/.ssh/id_rsa
 
 folders:
-    - map: "/home/jake/Work/stevens/senior-d/dev/liccb-event-manager"
+    - map: "/home/ldf/Documents/seniord/dev/liccb-event-manager"
       to: "/home/vagrant/liccb-event-manager"
 
 sites:
