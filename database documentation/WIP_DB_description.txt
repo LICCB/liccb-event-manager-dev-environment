@@ -1,0 +1,17 @@
+Participant
+    A participant is the person registering their party for the organizational event.
+
+Party
+    A party is a group of people who have registered together for an organizational event.
+
+Org_event
+    This is the organizational event (kayak trip, fundraiser, etc.). Parties attend organizational events.
+
+Party_participant_list
+    List of people in a particular party, identified by the registrant's email and the organizational event ID.
+
+Org_event_party_list
+    List of party id that are attending a particular organizational event (links parties to an event).
+
+Participant_comments
+    Any comments LICCB staff have about the registrant.
