@@ -1,0 +1,31 @@
+{# app/Resources/views/liccb/admin.html.twig #}
+{# Variables: page_title, stylesheet, body, javascript, user_entries#}
+{% extends 'base.html.twig' %}
+
+{% block page_title %}Add User Roles{% endblock %}
+
+{% block body %}
+	{# Contain whole thing in variable sized scrollable window #}
+	<ul>
+		{% for groups in group_entries %}
+		{# Contain each user entry in dropdown configuration in unordered list#}
+		<li>{{ group.name }}</li>
+		<li>
+    		<form action="whatever_url" method="post">
+      			<input type="checkbox" name="add_group_role" value="group_role">Add role?<br>
+    		</form>
+		</li>
+		{% endfor %}
+	</ul>
+	<ul>
+		{% for users in user_entries %}
+		{# Contain each user entry in dropdown configuration in unordered list#}
+		<li>{{ user.name }}</li>
+		<li>
+    		<form action="whatever_url" method="post">
+      			<input type="checkbox" name="add_role" value="role">Add role?<br>
+    		</form>
+		</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

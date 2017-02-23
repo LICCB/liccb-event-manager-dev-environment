@@ -1,0 +1,26 @@
+{# app/Resources/views/liccb/admin.html.twig #}
+{# Variables: page_title, stylesheet, body, javascript, user_entries#}
+{% extends 'base.html.twig' %}
+
+{% block page_title %}Administrator Portal{% endblock %}
+
+{% block body %}
+	{# Contain whole thing in variable sized scrollable window #}
+	<div class="panel-group" id="accordion">
+    {% for role in role_entries %}
+		{# Contain each role entry in dropdown configuration in unordered list#}
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					{# Role information goes here #}
+					Collapsible Group 1</a>
+				</h4>
+			</div>
+			<div id="collapse1" class="panel-collapse collapse in">
+				<div class="panel-body">Role check marks</div>
+			</div>
+		</div>
+    {% endfor %}
+	</div>
+{% endblock %}
