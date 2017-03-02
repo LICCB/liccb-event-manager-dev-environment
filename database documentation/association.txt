@@ -1,0 +1,14 @@
+Registrant : one to many : Party
+Registrant : one to many : Party_participant_list
+
+Party : many to one : Registrant
+Party : many to one : Org_event
+Party : one to many : Party_participant_list
+
+Party_participant_list : many to one : Registrant
+Party_participant_list : many to one : Party
+Party_participant_list : many to one : Participant
+
+Participant : one to many : Party_participant_list
+
+Org_event : one to many : Party

@@ -1,0 +1,14 @@
+http://symfony.com/doc/master/doctrine.html
+    use  php bin/console doctrine:generate:entity
+
+then make associations:
+http://symfony.com/doc/current/doctrine/associations.html
+make associations in yml file
+mappedBy = field
+inversedBy = private variable (on the one side, auto generated) holding the manies
+    possibility: the @joinColumn can be ommitted, defaults created
+        name = name of column for this (many) side??
+        referencedColumnName = name of column on the other (one) side??
+then do
+php bin/console doctrine:generate:entities AppBundle
+to generate new entity files (don't think I have to manually update __construct() if using this)
