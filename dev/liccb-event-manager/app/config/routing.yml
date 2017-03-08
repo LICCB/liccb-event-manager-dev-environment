@@ -4,6 +4,12 @@ app:
 home:
     path: /
     defaults: {_controller: AppBundle:Index:index}
+users:
+	path: /users
+	defaults: {_controller: AppBundle:UserManagement:users}
+splash:
+	path: /splash
+	defaults: {_controller: AppBundle:Splash:splash}
 event_show:
     path: /event/{id}
     defaults: {_controller: AppBundle:Event:show}
