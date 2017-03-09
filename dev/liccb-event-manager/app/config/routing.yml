@@ -4,9 +4,6 @@ app:
 home:
     path: /
     defaults: {_controller: AppBundle:Index:index}
-registrants:
-    path: /registrants
-    defaults: {_controller: AppBundle:RegistrantManagement:registrants}
 single_registrant:
     path: /registrants/{id}
     defaults: {_controller: AppBundle:SingleRegistrant:registrant}
