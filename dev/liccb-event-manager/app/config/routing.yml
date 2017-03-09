@@ -10,6 +10,9 @@ registrants:
 single_registrant:
     path: /registrants/{id}
     defaults: {_controller: AppBundle:SingleRegistrant:registrant}
+registrants:
+    path: /registrants
+    defaults: {_controller: AppBundle:RegistrantManagement:registrants}
 splash:
     path: /splash
     defaults: {_controller: AppBundle:Splash:splash}

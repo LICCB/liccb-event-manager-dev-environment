@@ -18,7 +18,7 @@ class SingleRegistrantController extends Controller
 					'No user found for id'.$id);
 		}
 		
-        return $this->render('registrant_management.html.twig',array(
+        return $this->render('single_registrant.html.twig',array(
 			'registrant' => $registrant,));
     }
 }
