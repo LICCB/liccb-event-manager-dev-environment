@@ -1,0 +1,13 @@
+{# app/Resources/views/liccb/single_registrant.html.twig #}
+{# Variables: page_title, stylesheet, body, javascript, user_entries#}
+{% extends 'base.html.twig' %}
+
+{% block page_title %}Registrant Viewer{% endblock %}
+
+{% block body %}
+	{# Contain whole thing in variable sized scrollable window #}
+    {% for user in user_entries %}
+
+    {% endfor %}
+	</div>
+{% endblock %}

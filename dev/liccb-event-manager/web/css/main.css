@@ -14,9 +14,48 @@
     display:table;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/* Style for accordion buttons */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+}
+
 .parallax { 
     /* The image used */
-    background-image: url("img_parallax.jpg");
+    background-image: url("../images/splash_back.jpg");
 
     /* Set a specific height */
     height: 500px; 
@@ -29,7 +68,7 @@
 }
 
 a:link, a:visited {
-    background-color: #ced6e2;
+    background-color: #b1bbcc;
     color: white;
     padding: 14px 50px;
     text-align: center;
@@ -37,30 +76,8 @@ a:link, a:visited {
     display: inline-block;
 }
 
-
 a:hover, a:active {
-    background-color: red;
-}
-
-body {
-    background-color: #bdd4f9;
-}
-
-#content {
-    width: 80%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color:white;
-    text-align:center;
-}
-
-#sidebar {
-	
-}
-
-#background_container {
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-color: #3c4047;
 }
 
 #userTable {

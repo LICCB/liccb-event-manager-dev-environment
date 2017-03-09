@@ -4,7 +4,7 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-class IndexController extends Controller
+class SplashController extends Controller
 {
     public function splashAction()
     {
