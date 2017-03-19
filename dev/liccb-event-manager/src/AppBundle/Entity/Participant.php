@@ -155,4 +155,62 @@ class Participant
     {
         return $this->party_participant_lists;
     }
+    /**
+     * @var integer
+     */
+    private $numEventsInvited;
+
+    /**
+     * @var integer
+     */
+    private $numEventsAttended;
+
+
+    /**
+     * Set numEventsInvited
+     *
+     * @param integer $numEventsInvited
+     *
+     * @return Participant
+     */
+    public function setNumEventsInvited($numEventsInvited)
+    {
+        $this->numEventsInvited = $numEventsInvited;
+
+        return $this;
+    }
+
+    /**
+     * Get numEventsInvited
+     *
+     * @return integer
+     */
+    public function getNumEventsInvited()
+    {
+        return $this->numEventsInvited;
+    }
+
+    /**
+     * Set numEventsAttended
+     *
+     * @param integer $numEventsAttended
+     *
+     * @return Participant
+     */
+    public function setNumEventsAttended($numEventsAttended)
+    {
+        $this->numEventsAttended = $numEventsAttended;
+
+        return $this;
+    }
+
+    /**
+     * Get numEventsAttended
+     *
+     * @return integer
+     */
+    public function getNumEventsAttended()
+    {
+        return $this->numEventsAttended;
+    }
 }
