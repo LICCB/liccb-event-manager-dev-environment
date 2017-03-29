@@ -1,0 +1,3 @@
+[submodule "dev/liccb-event-manager"]
+	path = dev/liccb-event-manager
+	url = git@github.com:jcmisrael/liccb-event-manager.git
